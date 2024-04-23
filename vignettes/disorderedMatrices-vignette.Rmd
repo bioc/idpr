@@ -272,9 +272,9 @@ PSA of Human TP53 to Gorilla and Mouse P53 BLOSUM62 (
 [Henikoff & Henikoff, 1992](https://doi.org/10.1073/pnas.89.22.10915))
 with default gap opening/extension from EMBOSS Needle (
 [Madeira et al., 2019](http://doi.org/10.1093/nar/gkz268)).
-pairwiseAlignment function and BLOSUM62 matrix are from **Biostrings**
+pairwiseAlignment function and BLOSUM62 matrix are from **pwalign**
 ```{r}
-library(Biostrings)
+library(pwalign)
 data("BLOSUM62") #loads the matrix from the Biostrings package
 HUMAN_MOUSE_BLOSUM_PSA <- pairwiseAlignment(P53_MOUSE, P53_HUMAN,
                                             substitutionMatrix = BLOSUM62,

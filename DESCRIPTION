@@ -1,7 +1,7 @@
 Package: idpr
 Type: Package
 Title: Profiling and Analyzing Intrinsically Disordered Proteins in R
-Version: 1.13.0
+Version: 1.13.1
 Authors@R: c(person(c("William", "M."), "McFadden", 
                 email = "wmm27@pitt.edu", 
                 role = c("cre", "aut")),
@@ -11,7 +11,7 @@ Authors@R: c(person(c("William", "M."), "McFadden",
              person("Michael", "Buszczak", 
                 email = "michael.buszczak@utsouthwestern.edu",
                 role = c("ctb", "fnd")))
-Date: 2020-09-14
+Date: 2024-04-23
 Description: ‘idpr’ aims to integrate tools for the computational analysis of
     intrinsically disordered proteins (IDPs) within R. This package is used to
     identify known characteristics of IDPs for a sequence of interest with
@@ -40,6 +40,7 @@ Imports:
 Suggests: 
     knitr,
     rmarkdown,
+    pwalign,
     msa,
     ape,
     testthat,
